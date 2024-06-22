@@ -1,0 +1,177 @@
+#welcome-video-wrapper {
+    height: calc(100vh - 70px);
+}
+
+#welcome-background-video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    z-index: 0;
+}
+
+#welcome-intro-two {
+    padding: 0 25px;
+}
+
+#welcome-intro-two h2 {
+    text-align: center;
+    font-size: 1.9em;
+    margin-top: 50px;
+}
+
+#welcome-intro-two p {
+    text-align: center;
+    font-size: 1.5em;
+    text-indent: 25px;
+    margin-bottom: 45px;
+}
+
+#featured-projects-wrapper {
+    background-color: var(--primary);
+    padding-top: 15px;
+}
+
+#featured-projects-wrapper h2 {
+    color: white;
+    text-align: center;
+}
+
+#featured-projects-list {
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#featured-projects-list li {
+    display: inline;
+
+}
+
+.featured-project-wrapper {
+    width: 25vw;
+    height: 250px;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 10px;
+    transition: all .4s;
+    /* background-color: white; */
+    background-image: url('https://kinsta.com/wp-content/uploads/2021/04/Edge-Web-CaptureScreenshot.png');
+    background-size: cover;
+}
+
+.featured-project-name-wrapper {
+    background-color: rgba(43, 47, 51, .9);
+    height: 100px;
+    vertical-align: bottom;
+    height: 0;
+}
+
+.featured-project-name-wrapper:hover {
+
+}
+
+.featured-project-name-wrapper p {
+    color: white;
+}
+
+.featured-project-wrapper:hover {
+    
+    transform: scale(1.05);
+}
+
+#featured-projects-wrapper button {
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.4em;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+#featured-projects-wrapper button:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+#contact-social-icons-list {
+    list-style-type: none;
+    float: left;
+}
+
+#contact-social-icons-list div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--primary);
+    align-items: center;
+    transition: all .4s;
+}
+
+#contact-social-icons-list div a {
+    color: white;
+    text-decoration: none;
+    font-size: 3.7em;
+    padding: 50%;
+    transition: all .2s;
+}
+
+#contact-social-icons-list div a:hover {
+    color: var(--primary);
+    transform: rotate(360deg);
+}
+
+#welcome-contact-text-wrapper {
+    text-align: center;
+}
+
+#welcome-contact-text-wrapper h2 {
+    font-size: 1.9em;
+    /* float: right; */
+}
+
+
+
+#contact-social-icons-list div:hover {
+    background-color: white;
+    border: 2px solid var(--primary);
+    box-shadow: 0px 0px 13px 0px rgba(43, 47, 51, 0.75);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(43, 47, 51, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(43, 47, 51, 0.75);
+}
+
+
+
+
+
+/* media queries */
+
+
+@media only screen and (max-width: 600px) {
+    .featured-project-wrapper {
+        width: 95vw;
+    }
+
+    #welcome-intro-two h2 {
+        font-size: 1.2em;
+    }
+
+    #welcome-intro-two p {
+        font-size: 1.1em;
+    }
+
+    #contact-social-icons-list div {
+        width: 70px;
+        height: 70px;
+    }
+
+    #contact-social-icons-list div a {
+        font-size: 1.5em;
+    }
+  }

@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary: #2B2F33;
+}
+
+p, h2 {
+  color: var(--primary);
+}
+
+button {
+  transition: all .5s;
+}
+
+button:active {
+  position: relative;
+  top: 2px;
+}
+
+.center {
+  text-align: center;
+}
+
+video {
+  pointer-events: none;
+}
