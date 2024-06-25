@@ -47,6 +47,7 @@ function Home() {
             <div id='welcome-video-wrapper'>
                 <video autoPlay muted loop id='welcome-background-video'>
                     <source src={welcomeBgVid} type="video/mp4" />
+                    <p>this is some text</p>
                 </video>
 
                 {/* <h2>lorem ipsum text text</h2> */}

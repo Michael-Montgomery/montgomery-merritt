@@ -48,5 +48,6 @@
     #featured-project-modal-wrapper button {
         font-size: 1em;
         width: 80vw;
+        height: 50px;
     }
 }
