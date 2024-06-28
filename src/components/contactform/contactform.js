@@ -4,15 +4,14 @@ import './contactform.css';
 function ContactForm() {
 
     const [checkboxIsChecked, setCheckboxIsChecked] = useState(false);
-
-
+ 
     return (
         <form id='contact-form'>
-            <input type='text' placeholder='First Name' className='half'></input>
-            <input type='text' placeholder='Last Name' className='half'></input><br></br>
-            <input type='text' placeholder='Company' className='full'></input><br></br>
-            <input type='text' placeholder='Email' className='full'></input><br></br>
-            <input type='text' placeholder='Phone Number'className='half'></input>
+            <input type='text' placeholder='First Name' className='half' minLength={2} maxLength={30} required></input>
+            <input type='text' placeholder='Last Name' className='half' minLength={2} maxLength={30} required></input><br></br>
+            <input type='text' placeholder='Company' className='full' maxLength={60}></input><br></br>
+            <input type='text' placeholder='Email' className='full' minLength={2} maxLength={50} required></input><br></br>
+            <input type='text' placeholder='Phone Number' className='half' maxLength={12}></input>
             <select className='half'>
                 <option>How did you hear about us?</option>
                 <option>Google</option>

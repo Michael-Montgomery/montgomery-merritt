@@ -12,14 +12,14 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const customStyles = {
     content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
     },
-  };
+};
 
 
 function Home() {
@@ -27,18 +27,18 @@ function Home() {
     // let subtitle;
     const [modalIsOpen, setIsOpen] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState(0);
-  
+
     function openModal() {
-      setIsOpen(true);
+        setIsOpen(true);
     }
-  
+
     function afterOpenModal() {
-      // references are now sync'd and can be accessed.
-    //   subtitle.style.color = '#f00';
+        // references are now sync'd and can be accessed.
+        //   subtitle.style.color = '#f00';
     }
-  
+
     function closeModal() {
-      setIsOpen(false);
+        setIsOpen(false);
     }
 
     return (
@@ -47,7 +47,6 @@ function Home() {
             <div id='welcome-video-wrapper'>
                 <video autoPlay muted loop id='welcome-background-video'>
                     <source src={welcomeBgVid} type="video/mp4" />
-                    <p>this is some text</p>
                 </video>
 
                 {/* <h2>lorem ipsum text text</h2> */}
@@ -72,11 +71,11 @@ function Home() {
                                     setSelectedIndex(idx);
                                     openModal();
                                 }}>
-                                    <div className='featured-project-wrapper'>
-                                        
+                                    <div className='featured-project-wrapper' style={{backgroundImage: `url(${project.thumbnailImgUrl})`}}>
+
                                         <div className='project-thumbnail-wrapper'>
                                             <div className='featured-project-name-wrapper'>
-                                            <p className='project-title'>{project.name}</p>
+                                                <p className='project-title'>{project.name}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -105,16 +104,16 @@ function Home() {
                 </div>
             </div>
             <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <button onClick={closeModal} id='contact-modal-close-btn'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon></button><br></br>
-       <FeaturedProject project={featuredProjects[selectedIndex]}></FeaturedProject>
-        
-      </Modal>
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                style={customStyles}
+                contentLabel="Example Modal"
+            >
+                <button onClick={closeModal} id='contact-modal-close-btn'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon></button><br></br>
+                <FeaturedProject project={featuredProjects[selectedIndex]}></FeaturedProject>
+
+            </Modal>
         </>
     )
 }

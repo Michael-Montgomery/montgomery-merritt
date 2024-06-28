@@ -53,22 +53,48 @@
     border: 2px solid white;
     display: inline-block;
     margin: 10px;
-    transition: all .4s;
+    transition: all .2s;
     /* background-color: white; */
-    background-image: url('https://kinsta.com/wp-content/uploads/2021/04/Edge-Web-CaptureScreenshot.png');
+    /* background-image: url('https://kinsta.com/wp-content/uploads/2021/04/Edge-Web-CaptureScreenshot.png'); */
     background-size: cover;
+    filter: grayscale(100%);
+}
+
+.featured-project-wrapper:hover {
+    filter: grayscale(0);
 }
 
 .featured-project-name-wrapper {
-    background-color: rgba(43, 47, 51, .9);
-    height: 100px;
+    background-color: black;
+    height: 0 !important;
+    width: 100%;
     vertical-align: bottom;
     height: 0;
+
+    transition: all .5s;
+    -webkit-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.75);
 }
 
 .featured-project-name-wrapper p {
-    color: white;
+    color: transparent;
+    margin-top: 0;
+    font-size: 1.4em;
 }
+
+.featured-project-wrapper:hover .featured-project-name-wrapper {
+    visibility: visible;
+    /* padding-top: 8px; */
+    height: 50px !important;
+}
+
+.featured-project-wrapper:hover .featured-project-name-wrapper p {
+    color: white;
+    
+}
+
+
 
 .featured-project-wrapper:hover {
     
@@ -161,6 +187,10 @@
 
     #welcome-intro-two p {
         font-size: 1.1em;
+    }
+
+    .featured-project-wrapper {
+        filter: grayscale(0);
     }
 
     #contact-social-icons-list div {
