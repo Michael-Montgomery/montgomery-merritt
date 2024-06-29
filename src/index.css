@@ -12,8 +12,10 @@ code {
     monospace;
 }
 
+/* primary */
+
 :root {
-  --primary: #2B2F33;
+  --primary: black;
 }
 
 p, h2 {
@@ -35,4 +37,18 @@ button:active {
 
 video {
   pointer-events: none;
+}
+
+h2 {
+  font-family: "Parisienne", cursive;
+  font-weight: 800;
+  font-size: 2em;
+  font-style: normal;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }

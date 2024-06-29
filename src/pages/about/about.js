@@ -40,6 +40,12 @@ function About() {
                     <li>Social Media</li>
                 </ul>
             </details>
+            <details>
+                <summary>Consulting</summary>
+                <p>
+                    Some text here
+                </p>
+            </details>
         </>
     )
 }

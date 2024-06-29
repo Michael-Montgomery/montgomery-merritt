@@ -1,18 +1,27 @@
 header {
     height: 75px;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    background-color: black;
     padding: 0 10px;
     z-index: 0;
     position: sticky;
     top: 0;
-    -webkit-box-shadow: 0px 17px 80px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 17px 80px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 17px 80px 0px rgba(0,0,0,0.75);
+    transition: all .5s;
+    -webkit-box-shadow: 0px 17px 80px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 17px 80px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 17px 80px 0px rgba(0, 0, 0, 0.75);
 }
 
 header nav {
     text-align: center;
     line-height: 75px;
+}
+
+#header-logo {
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin-top:10px;
 }
 
 header nav a:first-child p {
@@ -72,6 +81,10 @@ header nav button:hover {
     rotate: 180deg;
 }
 
+.responsive-open-btn {
+    display: none;
+}
+
 
 
 
@@ -102,5 +115,49 @@ header nav button:hover {
         height: 25px;
         width: 25px;
         border: none;
+    }
+
+    #header-contact-btn {
+        display: none;
+    }
+
+    .responsive-open-btn {
+        border: none;
+        font-size: 1.7em;
+        display: block;
+    }
+
+    .responsive-open-btn:hover {
+        background-color: var(--primary);
+        color: white;
+    }
+
+    #responsive-list {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #responsive-list li {
+        margin-bottom: 35px;
+    }
+
+    #responsive-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.8em;
+        /* margin-bottom: 15px; */
+        /* border-top: 2px solid white; */
+        /* width: 100%; */
+    }
+
+    #responsive-list li button {
+        /* float: right; */
+    font-size: 1.4em;
+    border-radius: 9px;
+    border: 1px solid white;
+    background-color: var(--primary);
+    color: white;
+    padding: 4px;
+    /* margin-top: 10px; */
     }
 }

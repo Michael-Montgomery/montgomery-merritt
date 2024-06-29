@@ -15,7 +15,10 @@
 
 #welcome-intro-two h2 {
     text-align: center;
-    font-size: 1.9em;
+    font-size: 2.6em;
+    font-family: "Parisienne", cursive;
+  font-weight: 800;
+  font-style: normal;
     margin-top: 50px;
 }
 
@@ -182,7 +185,7 @@ box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.75);
     }
 
     #welcome-intro-two h2 {
-        font-size: 1.2em;
+        font-size: 1.9em;
     }
 
     #welcome-intro-two p {
@@ -193,6 +196,15 @@ box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.75);
         filter: grayscale(0);
     }
 
+    #contact-social-icons-list {
+        padding-left: 5px;
+        float: left;
+    }
+
+    #contact-social-icons-list li {
+        
+    }
+
     #contact-social-icons-list div {
         width: 70px;
         height: 70px;
@@ -200,5 +212,23 @@ box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.75);
 
     #contact-social-icons-list div a {
         font-size: 1.5em;
+    }
+
+    #welcome-contact-text-wrapper h2 {
+        /* float: right; */
+        font-size: 1.2em;
+        width: 70vw;
+        margin-left: 25vw;
+        /* margin-top: 20vh; */
+        position: relative;
+        top: 75px;
+    }
+
+    #welcome-contact-text-wrapper a {
+        position: relative;
+        top:75px;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: var(--primary);
     }
   }
