@@ -2,7 +2,7 @@ const featuredProjects = [
     {
         name: "Traditionals",
         thumbnailImgUrl: "https://i.postimg.cc/x1RvZk0Y/tradionals.png",
-        link: 'http://trust-transactions.com/',
+        link: 'https://michael-montgomery.github.io/traditionals/#/',
         description: ''
     },
     {
