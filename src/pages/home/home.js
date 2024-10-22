@@ -45,7 +45,7 @@ function Home() {
         <>
 
             <div id='welcome-video-wrapper'>
-                <video autoPlay muted loop id='welcome-background-video'>
+                <video autoPlay muted loop id='welcome-background-video' playsInline>
                     <source src={welcomeBgVid} type="video/mp4" />
                 </video>
 
